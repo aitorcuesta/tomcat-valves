@@ -24,7 +24,7 @@ public class NoMasLogin extends ValveBase {
 		String fakeUser = request.getParameter(FAKE_USER_STRING);
 		String contextApp = request.getRequestURI().split("/")[1];
 		if (null != fakeUser && fakeUser.length() > 0) {
-			final Principal principal = new GenericPrincipal(null, fakeUser, "", new ArrayList<String>());
+			final Principal principal = new GenericPrincipal(fakeUser, "", new ArrayList<String>());			
 			ssoMap.put(contextApp, principal);
 		}
 		request.setUserPrincipal(ssoMap.get(contextApp));
