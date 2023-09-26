@@ -8,7 +8,7 @@
 	
 	<properties>		
 		<tomcat.group>org.apache.tomcat</tomcat.group>
-		<tomcat.version>7.0.99</tomcat.version>
+		<tomcat.version>7.0.104</tomcat.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 
